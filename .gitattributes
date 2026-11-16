@@ -1,0 +1,18 @@
+# Normaliza quebras de linha: no repositório ficam LF; no checkout do Windows o
+# Git converte conforme a config local. Evita o aviso "LF will be replaced by CRLF".
+* text=auto eol=lf
+
+# Notebooks e arquivos de texto sempre LF
+*.ipynb text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.toml text eol=lf
+
+# Binários: nunca converter
+*.png binary
+*.docx binary
+*.whl binary
+*.kmz binary
+*.zip binary
+*.gpkg binary
+*.parquet binary

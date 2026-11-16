@@ -1,0 +1,18 @@
+# Código privado de consulta — NUNCA versionar.
+# O repositório do kit é público; o Raio-X Rural (Vert3) é privado.
+_referencia/
+
+# Ambiente de desenvolvimento e saídas de teste
+.venv/
+saida_local/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Sistema
+.DS_Store
+Thumbs.db

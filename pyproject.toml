@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "kitagro"
+description = "Kit Agro de Campo — notebooks Colab prontos para agrônomos (NDVI, chuva/veranico, limpeza de arquivos geo)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Kit Agro de Campo" }]
+dynamic = ["version"]
+dependencies = [
+    "python-docx>=1.1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[tool.hatch.version]
+path = "src/kitagro/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/kitagro"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
